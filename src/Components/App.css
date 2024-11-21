@@ -1,0 +1,60 @@
+:root {
+  --background-color: #313a49;
+  --text-color: #6ccda5;
+  --heading-color: #d3e1ec;
+  --break-color: #3b4755;
+  --button-color: #52fea6;
+  --button-active-color: #3fb377;
+  --button-hover-shadow: #52fea6;
+}
+
+.advice {
+  padding: 30px;
+  width: 450px;
+  height: 200px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  margin: 100px auto;
+}
+
+p {
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 3px;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+  min-height: 60px;
+  max-height: 100px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: var(--button-color);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 335px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--button-active-color);
+}
+
+button:hover {
+  box-shadow: var(--button-hover-shadow) 0px 0px 10px;
+}
+
+img {
+  cursor: pointer;
+}
