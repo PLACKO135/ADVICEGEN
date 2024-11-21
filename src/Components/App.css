@@ -58,3 +58,15 @@ button:hover {
 img {
   cursor: pointer;
 }
+.dividerMobile {display: none;}
+
+@media (max-width: 800px) {
+  .dividerMobile {display: block;}
+  .divderDesktop {display: none;}
+}
+
+@media (max-width: 600px) {
+  .advice {
+    width: 375px;
+  }
+}

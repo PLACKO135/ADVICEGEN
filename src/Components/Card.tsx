@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import dividerMobile from '../../images/pattern-divider-mobile.svg';
 import divderDesktop from '../../images/pattern-divider-desktop.svg';
 import IconDice from '../../images/icon-dice.svg';
 import "./App.css"
@@ -27,7 +28,7 @@ const Card = () => {
 		<div className="advice">
             {advice?(<><p>Advice #{adviceId}</p>
 			<h1>"{advice}"</h1></>):(<h1>Loading...</h1>)}
-			
+			<img className="dividerMobile" style={{ cursor: "default" }} src={dividerMobile} alt="divider" />
 			<img style={{ cursor: "default" }} src={divderDesktop} alt="divider" />
 			<button onClick={() => fetchAdvice()}>
 				<img src={IconDice}></img>
